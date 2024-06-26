@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="icon" href="hadz.png">
+    <script src="https://kit.fontawesome.com/f531c8a38d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        header >ul{
+            top: -5px;
+            right: -400px;
+            transition: .3s;
+        }
+        #nav-check:checked ~ header >ul{
+            right: 0;
+        }
+        #toggle:checked ~ label > div > .toggle-circle{
+            transform: translateX(15px);
+        }
+        .toggle-circle{
+            transition: .3s;
+        }
+    </style>
+    <title>Hadz | Portofolio</title>
+</head>
+<body class="font-inter">
+   
+    <!-- navbar -->
+    <input type="checkbox"  id="nav-check" class="hidden">
+    <header class="w-full h-[80px] bg-white shadow-md fixed z-[999999] p-1 dark:bg-slate-800 dark:shadow-slate-700">
+        <h1 class="text-xl font-bold relative top-[20px] left-1 sm:left-[30px] md:text-2xl lg:text-3xl  dark:text-white">Hadz <span class="text-sky-400">Portofolio</span></h1>
+        <ul class="w-[200px] h-[380px] text-black bg-white dark:bg-slate-200 md:dark:bg-slate-800 md:dark:text-white rounded-md shadow-lg absolute md:transition-none z-[888] p-2 pt-[90px] md:right-[0] md:w-[500px] md:h-[70px] md:flex md:pt-[25px] md:rounded-none md:shadow-none md:justify-end md:overflow-hidden">
+            <li><a href="#home" class="block mb-4 p-1 md:mr-5 lg:text-lg" id="link">Home</a></li>
+            <li><a href="#about" class="block mb-4 p-1 md:mr-5 lg:text-lg" id="link">About</a></li>
+            <li><a href="#skill" class="block mb-4 p-1 md:mr-5 lg:text-lg" id="link">Skill</a></li>
+            <li><a href="#project" class="block mb-4 p-1 md:mr-5 lg:text-lg" id="link">Project</a></li>
+            <li><a href="#contact" class="block mb-4 p-1 md:mr-5 lg:text-lg" id="link">Contact</a></li>
+
+            <!-- toggle -->
+
+            <div class="flex justify-center my-4 relative md:bottom-[5px]">
+                <i class="fa-solid fa-sun text-slate-800 md:dark:text-slate-100"></i>
+                <input type="checkbox"  id="toggle" class="hidden">
+                <label for="toggle">
+                    <div class="w-10 h-5 bg-sky-400 rounded-full flex items-center p-1 mx-3">
+                        <div class="w-4 h-4 rounded-full bg-white toggle-circle"></div>
+                    </div>
+                </label>
+                <i class="fa-solid fa-moon text-slate-800 md:dark:text-slate-100"></i>
+            </div>
+        </ul>
+
+        <label for="nav-check" class="inline-block absolute right-4 top-5 z-[999] md:hidden">
+            <div class="mb-[8px] w-[25px] h-[2px] bg-sky-400"></div>
+            <div class="mb-[8px] w-[25px] h-[2px] bg-sky-400"></div>
+            <div class="mb-[8px] w-[25px] h-[2px] bg-sky-400"></div>
+        </label>
+    </header>
+
+    <!-- navbar selesai -->
+
+    <!-- halaman 1 -->
+
+    <section id="home" class="w-full h-screen overflow-hidden pt-[90px] bg-white md:flex justify-center items-center dark:bg-slate-800">
+       <div  class="w-full max-h-max flex flex-col justify-center items-center md:w-[300px] cursor-pointer ">
+            <svg class="overflow-hidden relative top-[100px] w-[400px] lg:w-[500px] lg:top-[140px]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#38BDF8" d="M56.8,-44.1C59.5,-28,38,-9.2,24.5,10.7C11,30.6,5.5,51.8,-2.7,53.3C-10.8,54.8,-21.7,36.8,-34.9,17C-48.1,-2.8,-63.7,-24.3,-58.3,-41.9C-52.9,-59.6,-26.5,-73.3,0.3,-73.4C27,-73.6,54,-60.2,56.8,-44.1Z" transform="translate(100 100)" />
+            </svg>
+            <img src="vector.png" alt="vector" class="w-[250px] relative z-[900] bottom-[250px] lg:w-[350px] transition duration-300 hover:scale-110">
+       </div>
+       <div class="w-full h-[150px] md:w-[300px]  ">
+           <div class="flex flex-col justify-center items-center relative bottom-[150px] md:bottom-0">
+                <h1 class="text-xl font-semibold text-slate-500 lg:text-2xl dark:text-slate-300">Hi I'am</h1>
+                <h1 class="text-3xl font-extrabold bg-gradient-to-r to-sky-500 from-sky-300 text-transparent bg-clip-text lg:text-4xl">Jihad Al Qudsi</h1>
+           </div>
+           <div class=" w-full max-h-max flex  justify-center items-center relative bottom-[140px] md:bottom-0">
+                <a href="github.com/hadzxc0d3/"><i class="fa-brands fa-github fa-2x m-2 hover:scale-125 transition duration-300 text-slate-600 dark:text-slate-400"></i></a>
+                <a href="youtube.com/@hadzxcode"><i class="fa-brands fa-youtube fa-2x m-2 hover:scale-125 transition duration-300 text-slate-600 dark:text-slate-400" ></i></a>
+                <a href="instagram.com/_hadzxcode"><i class="fa-brands fa-instagram fa-2x m-2 hover:scale-125 transition duration-300 text-slate-600 dark:text-slate-400"></i></a>
+                <a href="tiktok.com/@hadzxcode"><i class="fa-brands fa-tiktok fa-2x m-2 hover:scale-125 transition duration-300 text-slate-600 dark:text-slate-400"></i></a>
+           </div>
+       </div>
+    </section>
+
+    <!-- halaman 1 selesai -->
+
+    <!-- halaman 2 -->
+
+    <section id="about" class="w-full md:min-h-full overflow-hidden p-2 pt-[90px] pb-[50px]  dark:bg-slate-800" style="max-height: max-content;">
+        <div  class="w-full max-h-max  flex justify-center items-center">
+            <h1 class="text-4xl font-bold italic text-center text-sky-400 lg:text-5xl"><span class="text-sky-600">"</span> I'am FrontEnd Developer <span class="text-sky-600">"</span></h1>
+        </div>
+        <div class="mt-2 flex justify-center items-center">
+            <p class="text-center text-base sm:text-lg xl:w-[1400px] dark:text-white ">Hello, I am Jihad Al Qudsi, a vocational school student majoring in Computer Network Engineering who lives in Kudus City. I'm a beginner in the world of Frontend Web Development, and I'm excited to learn more about how to create engaging and functional web experiences. I believe that every line of code is the potential to create something amazing, and I am excited to continue developing my skills in the world of web development. Thank you for visiting my page!</p>
+        </div>
+        
+    </section>
+
+    <!-- halaman 2 selesai -->
+
+    <!-- halaman 3 -->
+
+    <section id="skill" class="w-full max-h-max overflow-hidden p-2 pt-[100px] bg-white dark:bg-slate-800 relative">
+        <div class="w-full max-h-max flex justify-center items-center mb-2">
+            <h1 class="text-4xl font-bold italic  text-sky-400 lg:text-5xl"><span class="text-sky-600">"</span> Skill And Tools <span class="text-sky-600">"</span></h1>
+        </div>
+        <div  class="w-full max-h-max flex justify-center items-center mb-8">
+            <p class="dark:text-white">a glimpse of information about the programming languages and tools I use.</p>
+        </div>
+
+
+        <div class="w-full max-h-max flex flex-col justify-center items-center mb-2 sm:flex-row sm:flex-wrap sm:justify-around border-l-2 ml-[10px]   xl:ml-[90px]">
+           <div class="w-full max-h-max p-2 mb-5 flex overflow-hidden xl:ml-[30px] ">
+                <div class="w-[25px] h-[25px] rounded-md border-[2px] mr-4 p-2 overflow-hidden flex justify-center items-center "><p class="inline-block text-sky-400">#</p></div>
+                <div>
+                    <h1 class="font-semibold md:text-lg lg:text-xl dark:text-white">HTML</h1>
+                    <p class=" dark:text-white">I'm quite advanced with the markup language.</p>
+                </div>
+           </div>
+           <div class="w-full max-h-max p-2 mb-5 flex overflow-hidden xl:ml-[30px]">
+                <div class="w-[25px] h-[25px] rounded-md border-[2px] mr-4 p-2 overflow-hidden flex justify-center items-center "><p class="inline-block text-sky-400">#</p></div>
+                <div>
+                    <h1 class="font-semibold md:text-lg lg:text-xl dark:text-white">CSS</h1>
+                    <p class=" dark:text-white">I'm not skilled enough in running pure CSS, because there are many commands I don't know yet.</p>
+                </div>
+            </div>
+            <div class="w-full max-h-max p-2 mb-5 flex overflow-hidden xl:ml-[30px]">
+                <div class="w-[25px] h-[25px] rounded-md border-[2px] mr-4 p-2 overflow-hidden flex justify-center items-center "><p class="inline-block text-sky-400">#</p></div>
+                <div >
+                    <h1 class="font-semibold md:text-lg lg:text-xl dark:text-white">PHP</h1>
+                    <p class=" dark:text-white">Right now I'm trying the PHP programming language because I want to try and deepen playing with databases.</p>
+                </div>
+            </div>
+            <div class="w-full max-h-max p-2 mb-5 flex overflow-hidden xl:ml-[30px]">
+                <div class="w-[25px] h-[25px] rounded-md border-[2px] mr-4 p-2 overflow-hidden flex justify-center items-center "><p class="inline-block text-sky-400">#</p></div>
+                <div>
+                    <h1 class="font-semibold md:text-lg lg:text-xl dark:text-white">Tailwind</h1>
+                    <p class=" dark:text-white">Tailwind is a CSS framework that I like now, and I often use it to create projects.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- halaman 3 selesai -->
+
+    <!-- halaman 4 -->
+
+    <section id="project" class="w-full max-h-max lg:h-screen p-2 pt-[100px]  overflow-hidden bg-white dark:bg-slate-800">
+        <div class="overflow-hidden flex flex-col justify-center items-center">
+            <h1  class="text-4xl font-bold italic  text-sky-400 lg:text-5xl"><span class="text-sky-600">"</span> All Project <span class="text-sky-600">"</span></h1>
+            <p class=" dark:text-white">This is a collection of projects from me...</p>
+        </div>
+        <div class="w-full max-h-max overflow-hidden flex justify-center  items-center flex-col mt-10 p-5 md:flex-row md:flex">
+           
+            <!-- kumpulan card project -->
+
+            <div class="w-[300px] h-[450px] bg-white dark:bg-slate-300 rounded-xl border shadow-lg mb-10 p-5 md:mx-5 transition duration-200 md:hover:scale-110 cursor-pointer">
+                <div class="w-full max-h-max flex justify-center items-center mb-10">
+                    <img src="kiro.png" alt="kiro" class="w-[300px] border shadow-lg">
+                </div>
+                <h1 class="font-bold text-xl text-sky-400">KIRO.APP</h1>
+                <p>I collaborated with the owner of the website named Kiro, the website is a web uploader.</p>
+                <a href="app.kiro.my.id" class="w-[100px] h-[40px] bg-sky-600 text-white px-[15px] py-[5px] rounded-full  relative top-[50px] shadow-md transition duration-200 hover:scale-125 select-none">View</a>
+            </div>
+            <div class="w-[300px] h-[450px] bg-white dark:bg-slate-300 rounded-xl border shadow-lg mb-10 p-5 md:mx-5 transition duration-200 md:hover:scale-110 cursor-pointer">
+                <div class="w-full max-h-max flex justify-center items-center mb-10">
+                    <img src="porto.png" alt="hadzxcode" class="w-[300px] border shadow-lg">
+                </div>
+                <h1 class="font-bold text-xl text-sky-400">Portofolio</h1>
+                <p>This is my first portfolio website, and it still uses pure CSS.</p>
+                <a href="app.kiro.my.id" class="w-[100px] h-[40px] bg-sky-600 text-white px-[15px] py-[5px] rounded-full  relative top-[50px] shadow-md transition duration-200 hover:scale-125 select-none">View</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- halaman 4 selesai -->
+
+    <!-- halaman 5 -->
+
+    <section id="contact" class="w-full h-screen p-2 pt-[100px] bg-white dark:bg-slate-800 overflow-hidden">
+        <h1  class="text-4xl font-bold italic  text-sky-400 lg:text-5xl text-center"><span class="text-sky-600">"</span> Feedback <span class="text-sky-600">"</span></h1>
+        <div class="flex flex-col justify-center items-center w-full max-h-max md:flex-row md:justify-around mt-10 md:bg-sky-200 md:py-8">
+            <h1 class="text-3xl font-bold hidden md:block md:mr-[50px] italic text-slate-100">SEND YOUR MESSAGE </h1>
+            <form class="w-[320px] max-h-max bg-slate-50  shadow-md p-2 pt-4 border rounded-xl flex flex-col justify-center items-center">
+                <div>
+                    <p class="mb-[4px] after:content-['*'] after:text-pink-600 after:ml-1 invalid:border-red-500">Email</p>
+                    <input type="email"  id="email" class="outline-none border-2 focus:ring-1 focus:ring-sky-400 rounded-md shadow-md p-2 invalid:text-red-500 invalid:focus:ring-red-500 peer" placeholder="masukkan email..">
+                    <p class="invisible peer-invalid:visible text-xs mt-1 mb-5 text-pink-600">Email belum sesuai*</p>
+                    <p>Pesan :</p>
+                    <textarea id="pesan" class="w-[300px] h-[100px] rounded-md shadow-md border outline-none p-2 focus:ring-1 focus:ring-sky-400" placeholder="masukkan pesan anda.."></textarea>
+                    <div class="w-full max-h-max flex justify-center items-center">
+                        <button class="w-[90px] h-[35px] rounded-full bg-sky-600 my-10 text-white shadow-md">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <script>
+        const checkbox = document.querySelector('#toggle');
+
+        const html = document.querySelector('html');
+
+        checkbox.addEventListener('click', function(){
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        })
+    </script>
+
+    
+</body>
+</html>
